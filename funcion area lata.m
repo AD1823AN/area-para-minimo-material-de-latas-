@@ -1,20 +1,20 @@
-% Title
-% Description
-% Author
-% Date
-% Version
+% Title   Area del Envaae de Lata de chocolate 
+% Description  Realiza un Script para sacar el area  de un envase lata
+% Author          Adriana Trejo Patricio,Jafe Martinez Meza, Jonatan Aparicio Quintanar 
+% Date  18 de octubre de 2021
+% Version  1.0
 % Usage 15 
 % Notes
 % limpiar variables
 clear
-% Ejemplo mínimo de material para envase cilindrico
+% Ejemplo mÃ­nimo de material para envase cilindrico
 % Rango de 1..16 en i = 1
 r=1:1:16;
 % Valor de la funcion
 ar=@(r) (pi()*(r.^2)) + (80./(r));
-% función plotear
+% funciÃ³n plotear
 y = (pi()*(r.^2)) + (80./(r));
-%función para determinar valor mínino
+%funciÃ³n para determinar valor mÃ­nino
 resr = fminbnd(ar,1,16);
 %Dibujar x.y
 plot(r, y)
