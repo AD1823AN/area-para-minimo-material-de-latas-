@@ -9,7 +9,7 @@
 clear
 % Ejemplo mínimo de material para envase cilindrico
 % Rango de 1..16 en i = 1
-r=1:1:16;
+r=0:1:;10
 % Valor de la funcion
 ar=@(r) (pi()*(r.^2)) + (80./(r));
 % función plotear
